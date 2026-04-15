@@ -1,0 +1,17 @@
+[project]
+name = "most-active-cookie"
+version = "1.0.0"
+requires-python = ">=3.13.5"
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.3"]
+
+[project.scripts]
+most-active-cookie = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli", "cookie_log", "counter", "models"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
